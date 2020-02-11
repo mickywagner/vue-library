@@ -3,7 +3,8 @@
         <h1>Bookshelf</h1>
         
         <div class="bookshelf">
-        
+            <book-table>
+            </book-table>
         </div>
 
         <button>
