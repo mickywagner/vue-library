@@ -27,3 +27,25 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+table {
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    
+}
+
+thead {
+    font-weight: 600;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+td {
+    padding: 1rem 0;
+}
+</style>
