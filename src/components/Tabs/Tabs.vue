@@ -10,7 +10,7 @@
             </ul>
         </div>
 
-        <div class="tabs-detail">
+        <div class="tabs-details">
             <slot></slot>
         </div>
     </div>
@@ -21,4 +21,14 @@
 </script>
 
 <style>
+
+.tabs-details {
+    padding: 1rem;
+}
+
+.tabs {
+    margin-bottom: 0;
+}
+
+
 </style>

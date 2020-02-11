@@ -4,14 +4,12 @@
           <app-tabs>
 
             <tab-item name="My Library" :selected="true">
-                My bookshelf
+                <library></library>
             </tab-item>
             
             <tab-item name="About">
                 Stuff about this app
             </tab-item>
-            
-           
 
           </app-tabs>   
      
