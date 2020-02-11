@@ -19,7 +19,7 @@
                         type="checkbox"
                         v-model="book.completed"/>
                 </td>
-                <td>
+                <td @click="removeBook">
                         Delete
                 </td>   
             </tr>
@@ -36,6 +36,12 @@ export default {
     data() {
         return {
 
+        }
+    },
+
+    methods: {
+        removeBook() {
+            this.$emit('delete')
         }
     }
 }

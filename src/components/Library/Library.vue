@@ -2,11 +2,14 @@
     <div class="library-app">
         
         <div class="bookshelf">
-            <book-table v-bind:books="books">
-            </book-table>
+            <book-table 
+                v-bind:books="books"
+                @delete="removeBook"
+            ></book-table>
         </div>
 
-        <button>
+        <button @click="toggleNewBookModal">
+        
             Add Book
         </button>
     </div>

@@ -31,7 +31,7 @@ export default {
 
     methods: {
         toggleNewBookModal() {
-
+            console.log('open book modal')
         },
 
         updateLibrary(book) {
