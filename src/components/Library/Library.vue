@@ -3,7 +3,7 @@
         <h1>Bookshelf</h1>
         
         <div class="bookshelf">
-            <book-table>
+            <book-table v-bind:books="books">
             </book-table>
         </div>
 

@@ -10,6 +10,19 @@
             </tr>
         </thead>
         <tbody>
+            <tr v-for="book in books" :key="book.id">
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.pages }}</td>
+                <td>
+                    <input 
+                        type="checkbox"
+                        v-model="book.completed"/>
+                </td>
+                <td>
+                        Delete
+                </td>   
+            </tr>
         </tbody>
     </table>
 </template>
@@ -18,7 +31,7 @@
 export default {
     name: 'BookTable',
 
-    props: [],
+    props: ['books'],
 
     data() {
         return {
