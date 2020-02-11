@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style scoped>
+
 table {
     margin-top: 20px;
     width: 80%;
@@ -52,6 +53,11 @@ table {
 
 thead {
     font-weight: 600;
+    background: rgba(100, 148, 237, 0.514);
+}
+
+thead td {
+    text-align: center;
 }
 
 tr {
@@ -59,6 +65,7 @@ tr {
 }
 
 td {
-    padding: 1rem 0;
+    padding: 1rem;
 }
+
 </style>
