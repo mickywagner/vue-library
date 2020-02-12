@@ -5,6 +5,7 @@
             <book-table 
                 v-bind:books="books"
                 @delete="removeBook"
+                @update="updateLocalStorage(books)"
             ></book-table>
         </div>
 
@@ -16,7 +17,7 @@
         </new-book-modal>
 
         <button @click="toggleNewBookModal">
-            Add Book
+            + New Book
         </button>
     </div>
 </template>

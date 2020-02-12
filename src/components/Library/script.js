@@ -40,13 +40,16 @@ export default {
 
         updateLibrary(book) {
             this.books.push(book)
-            localStorage.setItem('savedLibrary', JSON.stringify(this.books))
+            this.updateLocalStorage(this.books)
         },
 
         removeBook(book) {
             this.books.splice(this.books.indexOf(book), 1)
-            localStorage.setItem('savedLibrary', JSON.stringify(this.books))
+            this.updateLocalStorage(this.books)
+        },
 
+        updateLocalStorage(obj) {
+            localStorage.setItem('savedLibrary', JSON.stringify(obj))
         }
     }
 }

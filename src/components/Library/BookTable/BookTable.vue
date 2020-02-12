@@ -17,9 +17,10 @@
                 <td>
                     <input 
                         type="checkbox"
-                        v-model="book.completed"/>
+                        v-model="book.completed"
+                        @change="$emit('update')"/>
                 </td>
-                <td @click="removeBook">
+                <td @click="removeBook(book)">
                     <font-awesome-icon icon="trash"></font-awesome-icon>
                 </td>   
             </tr>
@@ -40,8 +41,8 @@ export default {
     },
 
     methods: {
-        removeBook() {
-            this.$emit('delete')
+        removeBook(book) {
+            this.$emit('delete', book)
         }
     }
 }
