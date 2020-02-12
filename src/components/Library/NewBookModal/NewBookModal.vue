@@ -14,7 +14,7 @@
                 </label>
                 <button type="submit">Add Book</button>
             </form>
-            <p @click="this.$emit('close')">Cancel</p>
+            <p @click="$emit('close')">Cancel</p>
         </div>
     </div>
 </template>
