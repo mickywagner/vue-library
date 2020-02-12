@@ -1,10 +1,12 @@
-import BookTable from './BookTable/BookTable.vue'
+import BookTable from './BookTable/BookTable'
+import NewBookModal from './NewBookModal/NewBookModal'
 
 export default {
     name: 'Library',
 
     components: {
         'book-table': BookTable,
+        'new-book-modal': NewBookModal
     },
 
     created: function() {
@@ -19,6 +21,8 @@ export default {
 
     data() {
         return {
+            NewBookModal: false,
+
             books: [
                 {title: 'Fellowship of the Ring', author: 'J.R.R. Tolkien', pages: "435", completed: true, id: 0},
                 {title: 'The Two Towers', author: 'J.R.R. Tolkien', pages: "500", completed: true, id: 1 },
@@ -31,7 +35,7 @@ export default {
 
     methods: {
         toggleNewBookModal() {
-            console.log('open book modal')
+            this.NewBookModal = !this.NewBookModal
         },
 
         updateLibrary(book) {

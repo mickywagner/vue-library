@@ -8,8 +8,14 @@
             ></book-table>
         </div>
 
+        <new-book-modal
+            v-show="NewBookModal"
+            @close="toggleNewBookModal"
+            @update-library="updateLibrary"
+        >
+        </new-book-modal>
+
         <button @click="toggleNewBookModal">
-        
             Add Book
         </button>
     </div>

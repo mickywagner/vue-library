@@ -1,0 +1,50 @@
+.new-book {
+    border: 1px solid blue;
+    height: 50vh;
+    width: 90vw;
+    background: whitesmoke;  
+    text-align: center; 
+}
+
+h1 {
+    text-align: right;
+    padding: 1rem;
+    color: cornflowerblue;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    border-radius: 2px;
+    border: 0;
+}
+
+button {
+    width: 30%;
+    margin: 0 auto;
+    background: cornflowerblue;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+p {
+    text-decoration: underline;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+p:hover {
+    cursor: pointer;
+}
