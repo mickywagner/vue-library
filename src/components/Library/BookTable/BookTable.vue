@@ -20,7 +20,7 @@
                         v-model="book.completed"/>
                 </td>
                 <td @click="removeBook">
-                        Delete
+                    <font-awesome-icon icon="trash"></font-awesome-icon>
                 </td>   
             </tr>
         </tbody>
