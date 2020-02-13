@@ -8,7 +8,7 @@
             </tab-item>
             
             <tab-item name="About">
-                Stuff about this app
+                <about-app></about-app>
             </tab-item>
 
           </app-tabs>   

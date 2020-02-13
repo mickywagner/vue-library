@@ -17,7 +17,7 @@
         </new-book-modal>
 
         <button @click="toggleNewBookModal">
-            + New Book
+            Add Book
         </button>
     </div>
 </template>

@@ -3,10 +3,11 @@ import App from './components/App.vue'
 import './../node_modules/bulma/css/bulma.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faTrash} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faTrash)
+library.add(faTrash, faGithub, faLinkedin)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

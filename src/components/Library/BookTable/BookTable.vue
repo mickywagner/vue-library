@@ -19,6 +19,8 @@
                         type="checkbox"
                         v-model="book.completed"
                         @change="$emit('update')"/>
+                    <span v-if="book.completed"> Read</span>
+                    <span v-else> Not Read</span>
                 </td>
                 <td @click="removeBook(book)">
                     <font-awesome-icon icon="trash"></font-awesome-icon>
@@ -60,7 +62,8 @@ table {
 
 thead {
     font-weight: 600;
-    background: rgba(100, 148, 237, 0.514);
+    background: var(--main-color);
+    color: var(--light-text);
 }
 
 thead td {
