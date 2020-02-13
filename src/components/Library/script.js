@@ -22,6 +22,8 @@ export default {
     data() {
         return {
             NewBookModal: false,
+            order: true,
+            authorOrder: true,
 
             books: [
                 {title: 'Fellowship of the Ring', author: 'J.R.R. Tolkien', pages: "435", completed: true, id: 0},
@@ -50,6 +52,38 @@ export default {
 
         updateLocalStorage(obj) {
             localStorage.setItem('savedLibrary', JSON.stringify(obj))
+        },
+
+        sortTitle() {
+            if(this.order) {
+                this.books.sort((a, b,) => (a.title > b.title) ? -1 : 1) 
+                this.order = !this.order
+            } else {
+                this.books.sort((a, b) => (a.title > b.title) ? 1 : -1) 
+                this.order = !this.order
+            }
+        }, 
+
+        sortAuthor() {
+            if(this.authorOrder) {
+                this.books.sort((a, b,) => (a.author > b.author) ? -1 : 1) 
+                this.authorOrder = !this.authorOrder
+            } else {
+                this.books.sort((a, b) => (a.author > b.author) ? 1 : -1) 
+                this.authorOrder = !this.authorOrder
+            }
+        },
+
+        sortPages() {
+            if(this.pagesOrder) {
+                this.books.sort((a, b,) => (a.pages > b.pages) ? -1 : 1) 
+                this.pagesOrder = !this.pagesOrder
+            } else {
+                this.books.sort((a, b) => (a.pages > b.pages) ? 1 : -1) 
+                this.pagesOrder = !this.pagesOrder
+            }
         }
+
+
     }
 }

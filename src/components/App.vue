@@ -25,6 +25,4 @@
 </style>
 
 
-// Add some more interesting styles 
-// Add animation for book items
-// Deploy to Github pages
+

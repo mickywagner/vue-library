@@ -6,6 +6,9 @@
                 v-bind:books="books"
                 @delete="removeBook"
                 @update="updateLocalStorage(books)"
+                @sort="sortTitle"
+                @sort-author="sortAuthor"
+                @sort-pages="sortPages"
             ></book-table>
         </div>
 

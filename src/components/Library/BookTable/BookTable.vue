@@ -2,9 +2,9 @@
     <table>
         <thead>
             <tr>
-                <td>Title</td>
-                <td>Author</td>
-                <td>Pages</td>
+                <td @click="$emit('sort')">Title</td>
+                <td @click="$emit('sort-author')">Author</td>
+                <td @click="$emit('sort-pages')">Pages</td>
                 <td>Status</td>
                 <td></td>
             </tr>
@@ -49,7 +49,8 @@ export default {
     methods: {
         removeBook(book) {
             this.$emit('delete', book)
-        }
+        },
+
     }
 }
 </script>
@@ -72,6 +73,7 @@ thead {
 
 thead td {
     text-align: center;
+    cursor: pointer;
 }
 
 
