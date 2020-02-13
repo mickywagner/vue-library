@@ -23,21 +23,23 @@ export default {
 <style >
 .about {
     width: 100%;
+    padding: 0 20px;
 }
 
-h1 {
+.about h1 {
     
     font-weight: 600;
     color: var(--main-color);
     font-size: 2em;
 }
 
-h2 {
+.about h2 {
     font-weight: 600;
     padding-bottom: 1rem;
 }
-p {
-    width: 500px;
+
+.about p {
+    max-width: 500px;
 }
 
 .social {

@@ -3,7 +3,7 @@
         <div class="tabs light">
             <ul>
                 <li v-for="tab in tabs" :class="{ 'is-active' : tab.isActive }" :key="tab.name">
-                    <a href="#" @click="selectTab(tab)">
+                    <a :href="tab.href" @click="selectTab(tab)">
                         {{ tab.name }}
                     </a>
                 </li>

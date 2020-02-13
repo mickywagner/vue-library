@@ -9,7 +9,9 @@
                 <td></td>
             </tr>
         </thead>
-        <tbody>
+        <tbody is="transition-group" 
+               enter-active-class="animated bounceInUp delay-4s"
+               leave-active-class="animated bounceOut">
             <tr v-for="book in books" :key="book.id">
                 <td>{{ book.title }}</td>
                 <td>{{ book.author }}</td>
@@ -31,6 +33,8 @@
 </template>
 
 <script>
+
+
 export default {
     name: 'BookTable',
 
@@ -51,13 +55,13 @@ export default {
 </script>
 
 <style scoped>
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 
 table {
     margin-top: 20px;
-    width: 80%;
     margin: 0 auto;
     margin-top: 1rem;
-    
+    width: 80%;
 }
 
 thead {
@@ -70,12 +74,22 @@ thead td {
     text-align: center;
 }
 
+
+tbody {
+    position: relative;
+    width: 100%;
+}
+
 tr {
     border-bottom: 1px solid black;
+
 }
 
 td {
     padding: 1rem;
 }
+
+
+  
 
 </style>

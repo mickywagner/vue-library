@@ -21,7 +21,9 @@ export default {
     },
 
     computed: {
-
+        href() {
+            return '#' + this.name.toLowerCase().replace(/ /g, '-')
+        }
     },
 
     mounted() {

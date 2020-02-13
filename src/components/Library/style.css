@@ -3,6 +3,7 @@
     overflow: visible;
     padding-bottom: 10rem;
     min-height: calc(100vh - 200px);
+    position: relative;
 }
 
 button {

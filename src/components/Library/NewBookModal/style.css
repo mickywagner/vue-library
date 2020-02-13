@@ -1,5 +1,4 @@
 .new-book {
-    border: 1px solid blue;
     height: 50vh;
     width: 90vw;
     background: whitesmoke;  
@@ -9,7 +8,7 @@
 h1 {
     text-align: right;
     padding: 1rem;
-    color: cornflowerblue;
+    color: var(--main-color);
     font-weight: 600;
 }
 
@@ -31,7 +30,7 @@ input {
 button {
     width: 30%;
     margin: 0 auto;
-    background: cornflowerblue;
+    background: var(--main-color);
     padding: 0.5rem;
     border-radius: 5px;
     border: none;
@@ -39,12 +38,17 @@ button {
     font-size: 0.9rem;
 }
 
-p {
+.new-book p {
     text-decoration: underline;
     font-size: 0.7rem;
     margin-top: 10px;
+    text-align: center;
 }
 
 p:hover {
     cursor: pointer;
+}
+
+#background {
+    background: linear-gradient(135deg, pink, purple); 
 }

@@ -3,7 +3,7 @@
     
           <app-tabs>
 
-            <tab-item name="My Library" :selected="true">
+            <tab-item name="My Library" :selected="true" >
                 <library></library>
             </tab-item>
             
@@ -23,3 +23,8 @@
 <style src='./style.css'>
 
 </style>
+
+
+// Add some more interesting styles 
+// Add animation for book items
+// Deploy to Github pages

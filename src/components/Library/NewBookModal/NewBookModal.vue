@@ -1,6 +1,6 @@
 <template>
     <div class="modal is-active">
-        <div class="modal-background"></div>
+        <div class="modal-background" id="background"></div>
         <div class="modal-content new-book">
             <h1>New Book</h1>
 
@@ -39,7 +39,8 @@ export default {
                 title: this.title,
                 author: this.author,
                 pages: this.pages,
-                completed: this.completed
+                completed: this.completed,
+                id: new Date().getTime() / 1000
             }
 
             this.$emit('update-library', this.newBook)

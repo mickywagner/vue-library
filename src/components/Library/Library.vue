@@ -9,12 +9,15 @@
             ></book-table>
         </div>
 
+        <transition enter-active-class="animated slideInLeft faster"
+                    leave-active-class="animated zoomOut faster">
         <new-book-modal
             v-show="NewBookModal"
             @close="toggleNewBookModal"
             @update-library="updateLibrary"
         >
         </new-book-modal>
+        </transition>
 
         <button @click="toggleNewBookModal">
             Add Book
