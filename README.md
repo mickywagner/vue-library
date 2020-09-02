@@ -8,8 +8,8 @@
 <h3>About This Project</h3>
 <p>This is a Vue Library app for keeping track of your reading list with basic CRUD operations. The idea was to redo one of the previous projects with a JS framework to see how much simpler and cleaner it is to update the DOM. The original vanilla JS version is <a href="https://github.com/mickywagner/Library">here</a>. I made for the Javascript course on <a href="https://www.theodinproject.com/">Odin Project</a>.
 </p>
-<p>Full project brief <a href="">here</a></p>
-<p>Live version <a href="">here</a>.</p>
+<p>Full project brief <a href="https://www.theodinproject.com/courses/javascript/lessons/frameworks">here</a>.</p>
+<p>Live version <a href="https://mickywagner.github.io/vue-library/">here</a>.</p>
 
 
 <h3>Technical Sheet</h3>
